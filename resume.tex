@@ -1,0 +1,63 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{textcomp}
+
+% adjust the page margins
+\usepackage[scale=0.84]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Sri}
+\familyname{Raghavan}
+\address{Carnegie Mellon University, SMC 4670}{Pittsburgh, PA 15289}    % optional, remove the line if not wanted
+\mobile{832.735.7242}                    % optional, remove the line if not wanted
+\email{srikrish@andrew.cmu.edu}                      % optional, remove the line if not wanted
+\extrainfo{Twitter: @seventhapollo} % optional, remove the line if not wanted
+\homepage{http://github.com/seventhapollo}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{Education}
+\cventry{2010--2014}{Bachelors in Computer Science}{Carnegie Mellon University}{Pittsburgh, PA}{}{GPA: 3.5}  % arguments 3 to 6 can be left empty
+\cventry{2006--2010}{High School}{Academy of Science and Technology}{The Woodlands, TX}{}{Class Rank: 2/593, GPA: 5.251}
+
+\section{Experience}
+\cventry{2011--2011}{Web Development Intern}{Offline Labs, Inc.}{San Francisco, CA}{}{A seed-stage startup building S\=osh, an activity recommendation engine. Worked extensively with Python and Django. See http://sosh.com.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Implemented a powerful AJAX-based search feature for activities in San Francisco
+\item Integration with Twilio API to provide mobile access to S\=osh
+\item Designed and implemented a modular content aggregator and feed/API scraper.
+\end{itemize}}
+\cventry{2010--2011}{Web Development Intern}{25eight, Inc.}{Pittsburgh, PA}{}{An AlphaLab-funded startup, building DeviceKnit, an online inventory for electronic devices. Worked primarily with Python/Django, reimplemented comprehensive device search using Xapian with JS-backed autocomplete. See http://deviceknit.com.}
+\cventry{2007--2008}{Software Development Intern}{epic software group, inc.}{The Woodlands, TX}{}{Small contract software firm, mostly web design and development. Worked directly with clients to grow their online presence.}
+
+\section{Skills}
+\cvline{Programming Languages}{\small Python, Standard ML, JavaScript, Java, C}
+\cvline{Tools}{\small Git (and GitHub), Subversion, Vim}
+\cvline{Style}{\small Strong work ethic, team player, always looking to learn more.}
+
+\section{Projects}
+\cventry{2010--2011}{ScheduleMatch}{}{}{}{Web application that works with the ScheduleMan class schedule planner at CMU to show users which of their Facebook friends share classes with them. Built using Python and Django.}
+\cventry{2010}{Social Assassins}{}{}{}{Web application to tie in with the popular live-action game 'Assassins', designed to make managing multiple instances of games easier for players and adminstrators. Built in Python and Django, for Yahoo! Hack U, Fall 2010.}
+
+\end{document}
